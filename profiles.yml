@@ -1,0 +1,18 @@
+user:
+  outputs:
+    default:
+      account: grwzayg-bd95315
+      auth_type: password
+      client_session_keep_alive: false
+      connect_retries: 3
+      connect_timeout: 30
+      database: analytics
+      password: Rvik@06101993086
+      retry_on_database_errors: true
+      role: null
+      schema: dbt_rkatava
+      threads: 6
+      type: snowflake
+      user: ravikatava
+      warehouse: transforming
+  target: default
