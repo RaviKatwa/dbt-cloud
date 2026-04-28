@@ -1,0 +1,21 @@
+models:
+  - name: fct_orders
+    description: This model provides a comprehensive view of customer orders, including details such as order ID, customer ID, order date, and the total amount of the order. It is used to analyze order trends, customer purchasing behavior, and revenue generation over time.
+    columns:
+      - name: order_id
+        description: A unique identifier for each order.
+        data_tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: The identifier for the customer who placed the order.
+        data_tests:
+          - not_null
+      - name: order_date
+        description: The date when the order was placed.
+        data_tests:
+          - not_null
+      - name: amount
+        description: The total monetary value of the order.
+        data_tests:
+          - not_null
