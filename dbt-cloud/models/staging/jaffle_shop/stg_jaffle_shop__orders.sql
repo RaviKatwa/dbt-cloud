@@ -11,10 +11,11 @@ renamed as (
     select
         id as order_id,
         customer as customer_id,
-        order_date,
-        status order_status,
-        _etl_loaded_at
-
+        ordered_at,
+        order_total,
+        store_id,
+        subtotal,
+        tax_paid
     from source
 
 )
