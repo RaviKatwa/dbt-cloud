@@ -10,7 +10,7 @@ renamed as (
 
     select
         id as order_id,
-        user_id as customer_id,
+        customer as customer_id,
         order_date,
         status order_status,
         _etl_loaded_at
