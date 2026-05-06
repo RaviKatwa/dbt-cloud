@@ -1,9 +1,9 @@
 models:
   - name: fct_orders
     description: This model provides a comprehensive view of customer orders, including details such as order ID, customer ID, order date, and the total amount of the order. It is used to analyze order trends, customer purchasing behavior, and revenue generation over time.
-    config: 
-     contract: 
-      enforced: true
+    config:
+      contract:
+        enforced: true
     columns:
       - name: order_id
         description: A unique identifier for each order.
