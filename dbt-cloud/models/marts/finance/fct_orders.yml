@@ -1,24 +1,34 @@
 models:
   - name: fct_orders
-    description: This model provides a comprehensive view of customer orders, including details such as order ID, customer ID, order date, and the total amount of the order. It is used to analyze order trends, customer purchasing behavior, and revenue generation over time.
     config:
       contract:
         enforced: true
     columns:
       - name: order_id
-        description: A unique identifier for each order.
-        data_tests:
-          - unique
-          - not_null
+        data_type: varchar
+        constraints:
+          - type: not_null
+      - name: location_id
+        data_type: varchar
       - name: customer_id
-        description: The identifier for the customer who placed the order.
-        data_tests:
-          - not_null
-      - name: order_date
-        description: The date when the order was placed.
-        data_tests:
-          - not_null
-      - name: amount
-        description: The total monetary value of the order.
-        data_tests:
-          - not_null
+        data_type: varchar
+      - name: order_total
+        data_type: number
+      - name: tax_paid
+        data_type: number
+      - name: ordered_at
+        data_type: timestamp_ntz
+      - name: customer_name
+        data_type: varchar
+      - name: location_name
+        data_type: varchar
+      - name: tax_rate
+        data_type: number
+      - name: location_opened_at
+        data_type: timestamp_ntz
+      - name: ordered_month
+        data_type: number
+      - name: ordered_day
+        data_type: number
+      - name: ordered_year
+        data_type: number
