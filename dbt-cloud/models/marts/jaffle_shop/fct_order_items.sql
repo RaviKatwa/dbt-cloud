@@ -41,4 +41,4 @@ customers as (
     left join customers on orders.customer_id=customers.customer_id
 )
 
-select * from final
+select * from final  where order_item_id is not null
