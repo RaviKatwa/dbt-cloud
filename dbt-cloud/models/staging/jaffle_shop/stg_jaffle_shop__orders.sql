@@ -9,12 +9,13 @@ source as (
 renamed as (
 
     select
-        id as order_id,
-        user_id as customer_id,
-        order_date,
-        status order_status,
-        _etl_loaded_at
-
+    id as order_id,
+    customer as customer_id,
+    ordered_at as ordered_date,
+    store_id,
+    subtotal as sub_total,
+    tax_paid,
+    order_total
     from source
 
 )
