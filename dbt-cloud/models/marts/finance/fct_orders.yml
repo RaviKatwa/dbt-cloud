@@ -8,7 +8,7 @@ models:
         data_type: varchar
         constraints:
           - type: not_null
-      - name: location_id
+      - name: store_id
         data_type: varchar
       - name: customer_id
         data_type: varchar
@@ -16,11 +16,11 @@ models:
         data_type: number
       - name: tax_paid
         data_type: number
-      - name: ordered_at
+      - name: ordered_date
         data_type: timestamp_ntz
       - name: customer_name
         data_type: varchar
-      - name: location_name
+      - name: store_name
         data_type: varchar
       - name: tax_rate
         data_type: number

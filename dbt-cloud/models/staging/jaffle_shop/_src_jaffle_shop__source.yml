@@ -4,6 +4,10 @@ sources:
     schema: jaffle_shop
     tables:
       - name: customers
+      - name: items
+      - name: products
+      - name: stores
+      - name: supplies
       - name: orders
         config: 
          freshness:
